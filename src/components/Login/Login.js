@@ -32,7 +32,6 @@ const Login = () => {
         .then((userCredential) => {
             // Signed in 
             const user = userCredential.user;
-            console.log("user", user.accessToken)
             localStorage.setItem('token', user.accessToken);
             navigate('/home')
         })
@@ -59,7 +58,6 @@ const Login = () => {
     // login using google OAuth
     const login = useGoogleLogin({
         onSuccess: (tokenResponse) => {
-            console.log('google login', tokenResponse)
             if (tokenResponse.access_token) {
                 localStorage.setItem('token', tokenResponse.access_token)
                 navigate('/home')

@@ -2,21 +2,17 @@ import CardContainer from '../card/CardContainer';
 import { useDispatch, useSelector } from 'react-redux';
 import styles from './SearchMovies.module.css';
 import { useEffect } from 'react';
-import { useSearchParams } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import { getSearchMovieList , resetSearchState } from '../../store/reducer/moviesReducer';
 import axios from 'axios';
 
-const results ={
-    results: [{}],
-    page: 0, 
-    total_pages: 0, 
-    total_results: 0 
-}
+
 
 const SearchMovies = (props) => {
     const allMoviesList = useSelector((state) => state.allMoviesList);
     const dispatchEvent = useDispatch();
     let [searchParams, setSearchParams] = useSearchParams();
+    const navigation = useNavigate();
 
     useEffect(() => {
         // reset search movies list when search input changes
@@ -55,6 +51,7 @@ const SearchMovies = (props) => {
             <div style={{ display: 'flex', flexFlow: 'wrap' }}>
                 {allMoviesList.searchMoviesList.list?.map((movie, idx) => {
                     return <CardContainer
+                        onClick={() => navigation(`/movieDetail?id=${movie.id}`)}
                         key={idx}
                         url={movie.poster_path}
                         title={movie.title}

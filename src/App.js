@@ -8,6 +8,7 @@ import {
 import Login from './components/Login/Login';
 import Home from './pages/Home/Home';
 import SearchMoviesList from './pages/searchMoviesListPage/SearchMoviesList';
+import MovieDetails from './pages/MovieDetails/MovieDetails';
 
 
 
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
   {
     path: "/searchMovies",
     element: <SearchMoviesList />
+  },
+  {
+    path: "/movieDetail",
+    element: <MovieDetails />
   }
 ]);
 

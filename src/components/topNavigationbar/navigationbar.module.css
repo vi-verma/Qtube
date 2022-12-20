@@ -1,0 +1,32 @@
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 75px;
+    /* background-color: black; */
+    color: #fff;
+};
+.listItem{
+    display: flex;
+    list-style: none;
+    color: #868686;
+};
+.navigation input{
+    border: 50px;
+}
+.nav{
+    width: 50%;
+    justify-content: space-around;
+}
+.nav li{
+    width: 100px;
+}
+.navigation >textarea:focus, input:focus {
+    color: #7e7474;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    color: #ccc;
+}

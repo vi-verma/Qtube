@@ -1,0 +1,20 @@
+.card {
+    border-radius: 12px;
+    height: 253px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/* .cardEpisode{
+    margin-left: 6px;
+    color: white;
+} */
+.linearGradient {
+    background: linear-gradient(180deg, rgba(29, 29, 29, 0) 0%, #0F1E29 100%);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: flex-end; */
+}

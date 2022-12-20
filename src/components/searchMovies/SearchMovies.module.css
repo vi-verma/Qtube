@@ -1,0 +1,25 @@
+.loadMoreButton {
+    /* max-width: 280px; */
+    width:75%;
+    height: 40px;
+    margin-left: 15%;
+    margin-top: 15px;
+    border-radius: 18PX;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+}
+
+.loadMoreButton:hover {
+    background: rgba(30, 125, 175, 0.686);
+    border-radius: 18PX;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.loadMoreButton:active {
+    background: rgb(184, 227, 184);
+}

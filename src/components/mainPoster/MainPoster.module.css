@@ -1,0 +1,35 @@
+.posterContainer{
+    min-width: 400px;
+    max-width: 86%;
+    margin: auto;
+    color: white;
+    /* line-height: 6px; */
+    margin-bottom: 18px;
+}
+.posterBodyTitle{
+
+}
+.title{
+    font-size: 32px;
+    line-height: 0px;
+}
+.description{
+    font-size: 22px;
+}
+.posterMain{
+    background: url('https://image.tmdb.org/t/p/w1920_and_h800_multi_faces/198vrF8k7mfQ4FjDJsBmdQcaiyq.jpg');
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 330px;
+    max-height: 60vh;
+    border-radius: 12px;
+}
+.posterMain div{
+    margin: 0 0 2% 5% ;
+    width: 50%;
+}
+.posterTitle{
+    font-size: 36px;
+    line-height: 0px;
+}

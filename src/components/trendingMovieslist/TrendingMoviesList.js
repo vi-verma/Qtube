@@ -53,7 +53,7 @@ const TrendingMoviesList = () => {
                     </p>
                 }
             >
-                <div style={{ display: 'flex', flexFlow: 'wrap' }}>
+                <div style={{ display: 'flex', flexFlow: 'wrap', justifyContent: 'center' }}>
                     {allMoviesList.movieList.list?.map((movie, idx) => {
                         return <CardContainer
                             key={idx}

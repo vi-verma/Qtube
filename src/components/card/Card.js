@@ -5,9 +5,10 @@ export const Card = ({ url,Imgurl,  episode }) => {
 
     return (
         <div
-            style={{background: url ? `url(${baseURL+url})` : 'none'}} 
-            className={styles.card}>
-
+            style={{
+            backgroundImage: url ? `url(${baseURL+url})` : 'none'}} 
+            className={styles.card}
+            >
             <div className={styles.linearGradient}>
             {Imgurl?.length && <img src={baseURL+Imgurl} width="100%" style={{ borderRadius: '12px', objectFit: 'contain', backgroundRepeat:'no-repeat' }} />}
                 <p className={styles.cardEpisode}>{episode}</p>

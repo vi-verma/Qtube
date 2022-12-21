@@ -1,9 +1,17 @@
 .card {
     border-radius: 12px;
-    height: 253px;
+    /* min-height: 230px; */
+    /* min-width: 180px; */
+    height: 269px;
+    width: 180px;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
+  
+    background-size: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+
 }
 
 /* .cardEpisode{
@@ -12,8 +20,8 @@
 } */
 .linearGradient {
     background: linear-gradient(180deg, rgba(29, 29, 29, 0) 0%, #0F1E29 100%);
-    height: 100%;
-    width: 100%;
+    /* height: 100%; */
+    /* width: 100%; */
     display: flex;
     /* justify-content: center; */
     /* align-items: flex-end; */

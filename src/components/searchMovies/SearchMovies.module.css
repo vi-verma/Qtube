@@ -1,15 +1,19 @@
-.loadMoreButton {
-    /* max-width: 280px; */
-    width:75%;
-    height: 40px;
-    margin-left: 15%;
-    margin-top: 15px;
-    border-radius: 18PX;
-    border: none;
+.container{
+    width: 88%;
+    margin: auto
+}
+.movieList{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-flow: wrap;
+    justify-content:center
+}
+.loadMoreButton {
+    width:100px;
+    height: 30px;
+    margin: 15px 40%;
+    border-radius: 18PX;
     font-size: 13px;
+    text-align: center;
 }
 
 .loadMoreButton:hover {

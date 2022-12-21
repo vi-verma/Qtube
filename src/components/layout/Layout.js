@@ -1,5 +1,5 @@
 import React from 'react';
-import  Navigationbar  from '../topNavigationbar/navigationbar';
+import  Navigationbar  from '../topNavigationbar/Navigationbar';
 
 const Layout = ({children}) => {
   return (

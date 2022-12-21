@@ -1,5 +1,5 @@
 .posterContainer{
-    min-width: 366px;
+    min-width: 329px;
     max-width: 86%;
     margin: auto;
     color: white;
@@ -24,6 +24,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     height: 36vw;
+    max-height: 80%;
 }
 .posterMain div{
     margin: 0 0 2% 5% ;

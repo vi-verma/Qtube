@@ -5,6 +5,7 @@ import InfiniteScroll from "react-infinite-scroll-component";
 import { useDispatch, useSelector } from 'react-redux';
 import {getMovieList} from './../../store/reducer/moviesReducer';
 import { useNavigate } from 'react-router-dom';
+import styles from './TrendingMoviesList.module.css'
 
 
 
@@ -40,7 +41,8 @@ const TrendingMoviesList = () => {
 
 
     return (
-        <div style={{ width: '88%', margin: 'auto', paddingBottom: '3%' }}>
+        <div className={styles.container} >
+            <p className={styles.title}>Trending Movies</p>
             <InfiniteScroll
                 dataLength={allMoviesList.movieList.list?.length}
                 next={fetchMoreData}

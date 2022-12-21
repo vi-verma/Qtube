@@ -17,10 +17,10 @@ export const Navigationbar = () => {
     return (
         <div className={styles.navigation}>
             <div className={styles.menu}>
-                <h1>Anonime</h1>
+                <p className={styles.menuTitle}>Anonime</p>
                 <div className={styles.subMenu}>
-                    <p style={{ marginRight: '15px' }} onClick={() => navigate('/home')}>Home</p>
-                    <p onClick={() => navigate('/searchMovies')}>List anime</p>
+                    <p style={{ marginRight: '15px', fontSize:'2vw', fontWeight: 'bold' }} onClick={() => navigate('/home')}>Home</p>
+                    <p style={{fontSize:'2vw', fontWeight: 'bold'}} onClick={() => navigate('/searchMovies')}>List anime</p>
                 </div>
             </div>
             <div>

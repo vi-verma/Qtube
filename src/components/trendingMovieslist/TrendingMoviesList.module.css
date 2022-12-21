@@ -1,0 +1,10 @@
+.container{
+    width: 88%;
+    margin: auto; 
+    padding-bottom: 3%; 
+    color: white 
+}
+.title{
+    text-align: center;
+    font-size: 1.6vw;
+}

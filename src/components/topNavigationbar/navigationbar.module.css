@@ -2,10 +2,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1% 2%;
     color: #fff;
     width: 88%;
-    margin-left: 4%
+    margin-left: 5%;
+    line-height: 0;
 };
 .listItem{
     display: flex;
@@ -29,7 +29,10 @@
     display: flex;
     width: 86%;
 }
-.menu h1 p{
+.menuTitle{
+    font-size: 3.8vw;
+}
+.menu p{
     cursor: pointer;
 }
 .subMenu{
@@ -40,9 +43,10 @@
 }
 .searchinput{
     padding: 10px 10px;
-     border-radius: 50px;
-      width: 220px;
-       border: none; background: #374151
+    border-radius: 50px;
+    width: 220px;
+    border: none; 
+    background: #374151
 }
 
 @media screen and (max-width: 700px){
@@ -54,5 +58,7 @@
     }
     .searchinput{
         width: 80vw;
+        height: 20px;
+        margin-bottom: 2%;
     }
 }

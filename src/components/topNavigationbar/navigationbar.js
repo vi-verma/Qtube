@@ -1,4 +1,4 @@
-import styles from './Navigationbar.module.css';
+import styles from './navigationbar.module.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 
